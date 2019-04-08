@@ -1,0 +1,222 @@
+<html>
+<body>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<style>
+body { 
+	margin-top: 30px;
+	background-image: url("https://cdn.wallpapersafari.com/91/72/51vagN.jpg");
+	background-repeat: repeat;
+	font-family: Ubuntu;
+}
+.button2 {
+	margin-bottom: 80px;
+}
+h3 {
+font-size: 30px;
+display:inline-block;
+}
+
+#insidetext {
+font-size: 50px;
+}
+.divmama {
+margin: 0 auto;
+width:50%;
+}
+.divfloat1 {
+clear: both;
+}
+.divparte1 {
+float: left;
+width: 50%;
+}
+.divparte2 {
+float: left;
+width: 50%;
+margin-bottom: 10px;
+}
+.butonverde{
+margin-bottom: 10px;
+}
+.buton_expandat
+{
+	width:100%;
+	margin-top:5px;
+}
+.padding_col{
+	padding-left:5px;
+	padding-right:5px;
+}
+</style>
+
+</head>
+<div class="container">
+	<div class="jumbotron"> 
+	<div class="row">
+		<div class="col-xs-3">&nbsp;</div>
+		<div class="col-xs-3">
+			<button class="buton_expandat btn btn-primary" onclick="newTitle();">ＲＡＮＤＯＭＩＺＥ</button>
+		</div>				
+		<div class="col-xs-3">
+			<button class="buton_expandat btn btn-info" onclick="newTitle();">ＲＡＮＤＯＭＩＺＥ</button>
+		</div>
+		<div class="col-xs-3">&nbsp;</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">&nbsp;</div>
+		<div class="col-xs-3">
+			<button class="buton_expandat btn btn-danger" onclick="newTitle();">ＲＡＮＤＯＭＩＺＥ</button>
+		</div>				
+		<div class="col-xs-3">
+			<button class="buton_expandat btn btn-warning" onclick="newTitle();">ＲＡＮＤＯＭＩＺＥ</button>
+		</div>
+		<div class="col-xs-3">&nbsp;</div>
+	</div>
+	<div class="row">
+	<div class="col-xs-3">&nbsp;</div>	
+		<div class="col-xs-6">
+			<button class="buton_expandat btn btn-block btn-success" onclick="newTitle();">
+				<span id="insidetext">GENERATE THE BIO</span>
+			</button>		
+		</div>		
+	<div class="col-xs-3">&nbsp;</div>	
+	</div>		
+		<div class="text-center mainbio">	
+			<h3>&nbsp;///&nbsp;</h3>
+			<h3><span id="target">PUBG Weapon Reviews</span></h3>
+			<h3>&nbsp;///&nbsp;</h3>
+			<h3><span id="target2">PUBG Weapon Reviews</span></h3>
+			<h3>&nbsp;///&nbsp;</h3>
+			<h3><span id="target3">PUBG Weapon Reviews</span>&nbsp;<span id="target4"></span></h3>
+			<h3>&nbsp;///&nbsp;</h3>
+			<h3><span id="target5">PUBG Weapon Reviews</span></h3>
+			<h3>&nbsp;///&nbsp;</h3>
+		</div>
+	</div>
+</div>
+<script>
+
+    var target = document.getElementById('target');
+var titles = [
+'EVERYTHING IS PERFECTLY SUBJECTIVE',
+'VARIABLES IN A SAFE SPACE',
+'MOVING STAIRS TO NOWHERE',
+'THOSE ARE BIKES, AND ITS 1AM',
+'CATASTROPHE AND AFTERMATH',
+'GRACEFUL DESCENT TO MADNESS',
+'EYES OF THE TEMPLE',
+'20TH CENTURY AESTHETICS',
+'THE ETERNAL VISION SYSTEM',
+'TJE UNCONSCIOUS CONNECTION',
+'NEON DREAMS INFINITY',
+'BETRAYED IN THE OCTAGON',
+'THE PURE AND THE DAMNED',
+'CLIMBING THE CORPORATE LADDER',
+'EMPTYNESS SURROUNDING',
+'ENLIGHTENMENT RITUAL',
+'IDENTIFICATION OF ENTRY POINT'
+];
+
+var target2 = document.getElementById('target2');
+var titles2 = [
+'風景を作成する',
+'希土類元素の衝突',
+'インターコムの会話',
+'あなたはそれを発見した、平和',
+'スイートアパートメント',
+'静かな無限の海',
+'ベネチアンブラインド',
+'流れ落ちる水',
+'曇ったビジョン',
+'現実に戻っ長い旅',
+'真夜中のエッセイ',
+'悪寒ダイビング',
+'新宿ゴールデン街',
+'フローティング'
+];
+
+var target3 = document.getElementById('target3');
+var titles3 = [
+'The Longest Walk',
+'The View Isnt Real, Its Painted',
+'Losing Focus of Reality',
+'Alternative Architecture',
+'The Luxury of Forever',
+'explore --- to live',
+'so, so far away',
+'Abstract Memories',
+'Tropical Hysteria',
+'Electrical Teardrops',
+'Surveying the Ruins',
+'Visual Novel',
+'Emerald Hill Area',
+'Gradient Winds'
+];
+
+var target4 = document.getElementById('target4');
+var titles4 = [
+'1985',
+'1986',
+'1987',
+'1988',
+'1989',
+'1990',
+'1991',
+'1992',
+'1993',
+'1994',
+'1995',
+'1996',
+'1997',
+'1998',
+'1999',
+'2000',
+'2001',
+'2002',
+'2003',
+'2004',
+'2005',
+'2006',
+'2007',
+'2008'
+];
+
+var target5 = document.getElementById('target5');
+var titles5 = [
+'モノクローム',
+'家の外の嵐',
+'生活の混乱',
+'空の通り',
+'呼吸蒸気',
+'赤い夜明け'
+];
+
+function newTitle () {
+    var i = (Math.random() * titles.length) | 0;
+	var j = (Math.random() * titles2.length) | 0;
+	var k = (Math.random() * titles3.length) | 0;
+	var l = (Math.random() * titles4.length) | 0;
+	var m = (Math.random() * titles5.length) | 0;
+    target.innerText = titles[i];
+	target2.innerText = titles2[j];
+	target3.innerText = titles3[k];
+	target4.innerText = titles4[l];
+	target5.innerText = titles5[m];
+}
+
+newTitle();
+	
+</script>
+<body>
+</html>
